@@ -1,8 +1,8 @@
-# 🎨 Emoji Classification Challenge
+# Emoji Classification Challenge
 
 A deep learning solution for classifying emoji images by their visual style/vendor using Convolutional Neural Networks (CNN).
 
-## 📋 Overview
+## Overview
 
 This project identifies the origin/vendor of emoji images based on their distinctive visual characteristics. The model can distinguish between emojis from:
 
@@ -13,7 +13,7 @@ This project identifies the origin/vendor of emoji images based on their distinc
 - 📱 **Samsung**
 - 💚 **WhatsApp**
 
-## ✨ Features
+##  Features
 
 - **Memory-Optimized Architecture**: Designed to run on systems with limited RAM
 - **Data Generators**: Loads images on-the-fly instead of storing all in memory
@@ -21,7 +21,7 @@ This project identifies the origin/vendor of emoji images based on their distinc
 - **Built-in Data Augmentation**: Rotation, flipping, and other transforms
 - **Comprehensive Evaluation**: Confusion matrix, classification report, and visualizations
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### Prerequisites
 
@@ -70,7 +70,7 @@ Id,Label
 ...
 ```
 
-## 📊 Model Architecture
+##  Model Architecture
 
 ### Lightweight CNN Design
 
@@ -94,7 +94,7 @@ Output (6 classes, Softmax)
 
 **Total Parameters**: ~200,000 (60% smaller than standard architectures)
 
-## 💾 Memory Optimization
+##  Memory Optimization
 
 This project is optimized for low-memory systems:
 
@@ -107,7 +107,7 @@ This project is optimized for low-memory systems:
 
 **Estimated RAM Usage**: 300-500 MB (vs 2-4GB for standard approach)
 
-## 🎯 Usage
+##  Usage
 
 ### Training
 
@@ -130,14 +130,14 @@ Id,Label
 ...
 ```
 
-## 📈 Performance
+##  Performance
 
 Expected performance metrics:
 - **Training Accuracy**: ~85-95%
 - **Validation Accuracy**: ~80-90%
 - **Training Time**: ~10-20 minutes (CPU) / ~3-5 minutes (GPU)
 
-## 🛠️ Customization
+##  Customization
 
 ### Increase Model Capacity
 If you have more memory available, you can increase model size:
@@ -155,7 +155,7 @@ layers.RandomRotation(0.2)  # Increase rotation range
 layers.RandomZoom(0.1)      # Add zoom augmentation
 ```
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 emoji/
@@ -170,7 +170,7 @@ emoji/
 └── submission.csv                  # Generated predictions
 ```
 
-## 🐛 Troubleshooting
+##  Troubleshooting
 
 ### TensorFlow Import Error
 ```
@@ -194,7 +194,7 @@ BATCH_SIZE = 8  # Or even 4
 New-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\FileSystem" -Name "LongPathsEnabled" -Value 1 -PropertyType DWORD -Force
 ```
 
-## 📝 Future Improvements
+##  Future Improvements
 
 - [ ] Transfer learning with pre-trained models (MobileNet, EfficientNet)
 - [ ] K-fold cross-validation
@@ -203,28 +203,16 @@ New-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\FileSystem" -Name
 - [ ] Hyperparameter optimization (Optuna, KerasTuner)
 - [ ] Model export for deployment
 
-## 🤝 Contributing
-
-Contributions are welcome! Feel free to:
-- Report bugs
-- Suggest features
-- Submit pull requests
-- Improve documentation
-
-## 📄 License
+##  License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🙏 Acknowledgments
+##  Acknowledgments
 
 - TensorFlow/Keras team for the deep learning framework
 - scikit-learn for preprocessing utilities
 - The emoji vendors for their distinctive designs
 
-## 📧 Contact
+##  Contact
 
 For questions or feedback, please open an issue on the repository.
-
----
-
-**Made with ❤️ for emoji classification**
