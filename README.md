@@ -72,9 +72,3 @@ pip install -r requirements.txt
 
 ### Output
 The notebook generates `submission.csv` containing emoji IDs and their predicted labels.
-
-## Key Features (To Update !)
-- **Flexible Image Preprocessing** - Handles multiple image formats (RGBA, grayscale, RGB)
-- **Batch Processing** - Efficient loading of large datasets
-- **Modular Design** - Easy to modify preprocessing and model architecture
-- **Submission Ready** - Generates output in the required format
